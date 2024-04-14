@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardMapper">
+
+<!--    <select id="selectBoardList"  resultType="com.devblog.practice.vo.BoardVo">-->
+<!--        SELECT-->
+<!--            MAKE_DT as makeDt-->
+<!--             ,MEMBER_NAME as memberName-->
+<!--             ,PRODUCT_NAME as productName-->
+<!--             ,MEMBER_SEX as memberSex-->
+<!--        FROM BOARDMEMBER-->
+<!--    </select>-->
+
+    <select id="selectBoardList"  resultType="com.devblog.practice.vo.BoardVo">
+        SELECT
+                  MAKE_DT
+                , MEMBER_NAME
+                , PRODUCT_NAME
+                , MEMBER_SEX
+        FROM LJH.BOARDMEMBER
+    </select>
+</mapper>
